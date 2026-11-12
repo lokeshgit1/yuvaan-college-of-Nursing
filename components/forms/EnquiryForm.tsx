@@ -99,7 +99,8 @@ export function EnquiryForm({
       return;
     }
 
-    const accessKey = process.env.NEXT_PUBLIC_FORM_ACCESS_KEY;
+    const accessKey =
+      process.env.NEXT_PUBLIC_FORM_ACCESS_KEY || '574efc03-5996-4dd7-b7cb-5da51fb62de6';
     if (!accessKey) {
       setStatus('error');
       setServerMsg(
