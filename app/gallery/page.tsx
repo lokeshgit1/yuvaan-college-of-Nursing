@@ -8,7 +8,7 @@ import { GalleryLightboxClient } from '@/components/sections/GalleryLightboxClie
 export const metadata = createPageMetadata({
   title: 'Student Life & Campus Gallery',
   description:
-    'Explore photographs from Hemangini Nursing College laboratories, clinical hospital rotations, Lamp Lighting ceremonies, community camps, and library spaces.',
+    'Explore photographs from Yuvaan College of Nursing laboratories, clinical hospital rotations, Lamp Lighting ceremonies, community camps, and library spaces.',
   path: '/gallery/',
 });
 
@@ -26,7 +26,7 @@ export default function GalleryPage() {
 
       <PageBanner
         eyebrow="Campus & Student Life"
-        title="Life Inside Hemangini Nursing College"
+        title="Life Inside Yuvaan College of Nursing"
         description="Browse campus laboratories, hospital postings, outreach camps, and student ceremonies. Click any photograph for full-screen view."
         breadcrumbs={[{ label: 'Gallery' }]}
       />

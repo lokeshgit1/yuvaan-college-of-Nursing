@@ -18,7 +18,7 @@ export const testimonialsData: Testimonial[] = [
     role: 'Student Feedback',
     course: 'GNM Nursing Track',
     quote:
-      'Having a structured nursing college right in Itamati, Nayagarh makes quality healthcare education accessible close to home with transparent guidance.',
+      'Having a structured nursing college right at Mahura near Tamando, Khordha makes quality healthcare education accessible with transparent guidance.',
     rating: 5,
     initials: 'GS',
     confirm: false,
@@ -27,7 +27,7 @@ export const testimonialsData: Testimonial[] = [
     id: 'test-3',
     name: 'Guardian Feedback',
     role: 'Parent Perspective',
-    course: 'Nayagarh District',
+    course: 'Khordha District',
     quote:
       'During our campus enquiry, the leadership answered every question about eligibility, documents, and clinical training clearly and respectfully.',
     rating: 5,

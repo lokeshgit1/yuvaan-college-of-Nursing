@@ -18,7 +18,10 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
   if (!current) return null;
 
   return (
-    <section className="bg-white py-14 md:py-24" aria-label="Campus Facilities Highlights">
+    <section
+      className="border-y border-border/70 bg-surface-cream py-16 md:py-24"
+      aria-label="Campus Facilities Highlights"
+    >
       <div className="mx-auto max-w-container px-4 md:px-6">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <SectionHeader
@@ -33,7 +36,7 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
               type="button"
               onClick={prev}
               aria-label="Previous facility"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-navy shadow-soft transition-colors hover:border-primary hover:bg-surface-mint"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-navy shadow-soft transition-colors hover:border-primary hover:bg-primary-dark hover:text-white"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -41,7 +44,7 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
               type="button"
               onClick={next}
               aria-label="Next facility"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-navy shadow-soft transition-colors hover:border-primary hover:bg-surface-mint"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-navy shadow-soft transition-colors hover:border-primary hover:bg-primary-dark hover:text-white"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -49,9 +52,9 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
         </div>
 
         {/* Highlight Showcase Card */}
-        <div className="mt-8 overflow-hidden rounded-card border border-border bg-white shadow-card">
+        <div className="mt-8 overflow-hidden rounded-card border border-border bg-white shadow-card-hover">
           <div className="grid grid-cols-1 lg:grid-cols-12">
-            <div className="relative aspect-[16/10] bg-surface-grey lg:col-span-7 lg:aspect-auto lg:min-h-[380px]">
+            <div className="relative aspect-[16/10] bg-surface-grey lg:col-span-7 lg:aspect-auto lg:min-h-[400px]">
               <img
                 src={current.image}
                 alt={current.imageAlt}
@@ -60,19 +63,17 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
-              <span className="bg-navy/85 absolute left-4 top-4 rounded-full px-3.5 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+              <span className="absolute left-4 top-4 rounded-full border border-white/25 bg-[#090D1F]/80 px-3.5 py-1 text-xs font-semibold text-amber-300 backdrop-blur-md">
                 {current.category}
               </span>
             </div>
 
-            <div className="flex flex-col justify-between p-6 md:p-8 lg:col-span-5">
+            <div className="flex flex-col justify-between p-6 md:p-9 lg:col-span-5">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
-                  Facility {activeIndex + 1} of {facilities.length}
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">
+                  Facility 0{activeIndex + 1} / 0{facilities.length}
                 </p>
-                <h3 className="mt-2 font-heading text-2xl font-semibold text-navy">
-                  {current.title}
-                </h3>
+                <h3 className="mt-2 font-heading text-2xl font-bold text-navy">{current.title}</h3>
                 <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">{current.details}</p>
 
                 <ul className="mt-5 space-y-2.5">
@@ -104,8 +105,8 @@ export function FacilitiesCarousel({ facilities }: { facilities: FacilityItem[] 
                       className={cn(
                         'h-2.5 rounded-full transition-all',
                         idx === activeIndex
-                          ? 'w-7 bg-accent-dark'
-                          : 'hover:bg-primary/50 w-2.5 bg-border'
+                          ? 'w-8 bg-primary'
+                          : 'w-2.5 bg-border hover:bg-primary/50'
                       )}
                     />
                   ))}

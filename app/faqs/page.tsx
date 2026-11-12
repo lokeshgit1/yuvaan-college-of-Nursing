@@ -9,7 +9,7 @@ import { FaqsClient } from '@/components/sections/FaqsClient';
 export const metadata = createPageMetadata({
   title: 'Frequently Asked Questions (FAQs)',
   description:
-    'Answers to common parent and student questions about GNM and ANM eligibility, fees, scholarships, hostel safety, and hospital training at Hemangini Nursing College.',
+    'Answers to common parent and student questions about GNM and ANM eligibility, fees, scholarships, hostel safety, and hospital training at Yuvaan College of Nursing.',
   path: '/faqs/',
 });
 
@@ -47,7 +47,7 @@ export default function FaqsPage() {
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link
                 href="/contact/"
-                className="inline-flex min-h-[44px] items-center rounded-btn bg-accent-dark px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#a91c61]"
+                className="inline-flex min-h-[44px] items-center rounded-btn bg-accent-dark px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
               >
                 Contact Admissions Desk
               </Link>

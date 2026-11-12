@@ -21,9 +21,9 @@ import { NewsSection } from '@/components/sections/NewsSection';
 import { AdmissionsCtaBanner } from '@/components/sections/AdmissionsCtaBanner';
 
 export const metadata = createPageMetadata({
-  title: 'Hemangini Nursing College | GNM & ANM Nursing Courses in Nayagarh',
+  title: 'Yuvaan College of Nursing | GNM & ANM Nursing Courses in Khordha',
   description:
-    'Explore General Nursing & Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM) at Hemangini Nursing College, Itamati, Nayagarh, Odisha.',
+    'Explore General Nursing & Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM) at Yuvaan College of Nursing, Mahura, Tamando, Khordha, Odisha.',
   path: '/',
 });
 

@@ -20,7 +20,7 @@ export default function NotFound() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
           <Link
             href="/"
-            className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+            className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
           >
             <Home className="h-4 w-4" aria-hidden="true" />
             <span>Return Home</span>

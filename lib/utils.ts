@@ -26,7 +26,7 @@ export function buildTelHref(phone: string): string {
 }
 
 export function getSiteUrl(): string {
-  return (process.env.NEXT_PUBLIC_SITE_URL || 'https://hemangininursingcollege.edu.in').replace(
+  return (process.env.NEXT_PUBLIC_SITE_URL || 'https://yuvaancollegeofnursing.edu.in').replace(
     /\/+$/,
     ''
   );

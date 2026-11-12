@@ -12,11 +12,12 @@ interface BaseProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-accent-dark text-white hover:bg-[#a91c61] shadow-sm hover:-translate-y-0.5 active:translate-y-0',
+    'bg-accent-dark text-white hover:bg-[#065f46] shadow-sm hover:-translate-y-0.5 active:translate-y-0',
   secondary:
     'bg-white text-navy border border-border hover:border-primary hover:text-primary-dark shadow-soft hover:-translate-y-0.5',
-  outlineLight: 'bg-transparent text-white border border-white/40 hover:bg-white hover:text-navy',
-  teal: 'bg-primary-dark text-white hover:bg-[#085451] shadow-sm hover:-translate-y-0.5',
+  outlineLight:
+    'bg-slate-800/70 text-white border border-slate-600 hover:bg-white hover:text-navy',
+  teal: 'bg-primary-dark text-white hover:bg-[#075985] shadow-sm hover:-translate-y-0.5',
 };
 
 const baseClasses =

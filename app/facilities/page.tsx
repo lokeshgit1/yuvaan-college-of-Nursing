@@ -10,7 +10,7 @@ import { FacilitiesCatalogClient } from '@/components/sections/FacilitiesCatalog
 export const metadata = createPageMetadata({
   title: 'Campus Facilities | Nursing Labs, Library, Hostel & Clinical Wards',
   description:
-    'Explore Hemangini Nursing College facilities on Main Road, Itamati, Nayagarh: 32,496 sq. ft. SPA-approved campus, fire & pollution cleared block, nursing labs, and clinical training.',
+    'Explore Yuvaan College of Nursing facilities at Mahura (Near C.V. Raman College), Khordha: 35,000 sq. ft. SPA-approved campus, fire & pollution cleared block, nursing labs, and clinical training.',
   path: '/facilities/',
 });
 
@@ -30,12 +30,12 @@ export default function FacilitiesPage() {
       <PageBanner
         eyebrow="Infrastructure & Campus Life"
         title="Designed for Safe Living & Hands-On Clinical Practice"
-        description="Located on Main Road, Itamati, Nayagarh across 32,496 sq. ft. (30,542 sq. ft. built-up area) with SPA approval, Registered Architect certification, Fire & Pollution clearances, and dedicated lab assistants."
+        description="Located at Mahura (Near C.V. Raman College), Tamando, Khordha across 35,000 sq. ft. (31,559 sq. ft. built-up area) with SPA approval, Registered Architect certification, Fire & Pollution clearances, and dedicated lab assistants."
         breadcrumbs={[{ label: 'Facilities' }]}
       >
         <Link
           href="/contact/"
-          className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+          className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
         >
           <CalendarCheck className="h-4 w-4" aria-hidden="true" />
           <span>Schedule a Guided Campus Tour</span>
@@ -50,14 +50,14 @@ export default function FacilitiesPage() {
               <p className="text-xs font-semibold uppercase tracking-wide text-primary-dark">
                 Total Campus Area
               </p>
-              <p className="mt-1 font-heading text-xl font-bold text-navy">32,496 Sq. Ft.</p>
-              <p className="text-xs text-ink-muted">Main Road, Itamati</p>
+              <p className="mt-1 font-heading text-xl font-bold text-navy">35,000 Sq. Ft.</p>
+              <p className="text-xs text-ink-muted">Mahura, Near C.V. Raman College</p>
             </div>
             <div className="bg-surface-mint/45 rounded-card border border-border p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-primary-dark">
                 Total Built-Up Area
               </p>
-              <p className="mt-1 font-heading text-xl font-bold text-navy">30,542 Sq. Ft.</p>
+              <p className="mt-1 font-heading text-xl font-bold text-navy">31,559 Sq. Ft.</p>
               <p className="text-xs text-ink-muted">{site.disclosure.buildingApproval}</p>
             </div>
             <div className="bg-surface-cream/70 rounded-card border border-border p-4 sm:col-span-2">

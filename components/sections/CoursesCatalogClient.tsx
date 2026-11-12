@@ -84,7 +84,7 @@ export function CoursesCatalogClient({ courses }: { courses: Course[] }) {
             No matching nursing courses found
           </p>
           <p className="mt-1 text-sm text-ink-muted">
-            Hemangini Nursing College offers GNM and ANM programmes. Clear search to view both.
+            Yuvaan College of Nursing offers GNM and ANM programmes. Clear search to view both.
           </p>
           <button
             type="button"

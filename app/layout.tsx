@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   description: site.description,
   icons: {
-    icon: '/logos/hemangini-favicon.png',
-    apple: '/logos/hemangini-favicon.png',
+    icon: '/logos/yuvaan-mark.svg',
+    apple: '/logos/yuvaan-mark.svg',
   },
   openGraph: {
     type: 'website',

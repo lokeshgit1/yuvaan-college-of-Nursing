@@ -7,7 +7,7 @@ import { JsonLd } from '@/components/ui/JsonLd';
 export const metadata = createPageMetadata({
   title: 'Privacy Policy',
   description:
-    'How Hemangini Nursing College collects, uses, and safeguards student and parent enquiry information.',
+    'How Yuvaan College of Nursing collects, uses, and safeguards student and parent enquiry information.',
   path: '/legal/privacy/',
 });
 

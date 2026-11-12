@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/ui/JsonLd';
 export const metadata = createPageMetadata({
   title: 'Mandatory Public Disclosure',
   description:
-    'Statutory institutional disclosure for Hemangini Nursing College: trust details, INC & State Council registration codes, land/hospital infrastructure, and seat matrix.',
+    'Statutory institutional disclosure for Yuvaan College of Nursing: trust details, INC & State Council registration codes, land/hospital infrastructure, and seat matrix.',
   path: '/legal/disclosure/',
 });
 
@@ -29,11 +29,11 @@ export default function MandatoryDisclosurePage() {
       value: `${site.about.trustName} — Reg. No. ${site.disclosure.trustRegistrationNo} (Registered ${site.disclosure.trustRegisteredYear} at ${site.disclosure.trustRegisteredAt})`,
     },
     {
-      label: 'Chairperson',
+      label: 'Chairperson & Authorised Representative',
       value: `${site.about.chairmanName} (${site.about.chairmanPhone})`,
     },
     {
-      label: 'Secretary & Authorised Representative',
+      label: 'Secretary',
       value: `${site.about.secretaryName} (${site.about.secretaryPhone})`,
     },
     {
@@ -78,7 +78,7 @@ export default function MandatoryDisclosurePage() {
       <PageBanner
         eyebrow="Statutory Transparency"
         title="Mandatory Public Disclosure"
-        description="Official institutional, trust, regulatory, infrastructure, and intake details for Hemangini Nursing College, Main Road, Itamati, Nayagarh."
+        description="Official institutional, trust, regulatory, infrastructure, and intake details for Yuvaan College of Nursing, Mahura, Tamando, Khordha."
         breadcrumbs={[{ label: 'Mandatory Disclosure' }]}
       />
 
@@ -93,7 +93,7 @@ export default function MandatoryDisclosurePage() {
               <p>
                 <strong>Verified Public Record:</strong> Institutional, trust, campus measurement,
                 safety clearance, and faculty records published below are confirmed by{' '}
-                <strong>{site.name}</strong> and <strong>Jyoti Shyam Welfare</strong>.
+                <strong>{site.name}</strong> and <strong>SAR Welfare</strong>.
               </p>
             </div>
           </div>

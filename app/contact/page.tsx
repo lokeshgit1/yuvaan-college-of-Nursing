@@ -10,7 +10,7 @@ import { buildTelHref, buildWhatsAppUrl } from '@/lib/utils';
 export const metadata = createPageMetadata({
   title: 'Contact Us | Admissions Desk, Location & Campus Visit',
   description:
-    'Reach Hemangini Nursing College admissions desk by phone, WhatsApp, email, or online enquiry form, or get directions to visit the campus.',
+    'Reach Yuvaan College of Nursing admissions desk by phone, WhatsApp, email, or online enquiry form, or get directions to visit the campus.',
   path: '/contact/',
 });
 
@@ -153,10 +153,10 @@ export default function ContactPage() {
             {/* Google Map Embed */}
             <div className="overflow-hidden rounded-card border border-border bg-white shadow-card">
               <div className="flex items-center justify-between border-b border-border px-4 py-2.5 text-xs font-semibold text-navy">
-                <span>Main Road, Itamati, Nayagarh, Odisha – 752068</span>
+                <span>Near C.V. Raman College, Mahura, Tamando, Khordha, Odisha – 752054</span>
               </div>
               <iframe
-                title="Hemangini Nursing College Location Map"
+                title="Yuvaan College of Nursing Location Map"
                 src={site.mapEmbedUrl}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

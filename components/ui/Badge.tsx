@@ -32,7 +32,7 @@ export function Badge({ children, variant = 'mint', className }: BadgeProps) {
 export function ConfirmBadge({ className }: { className?: string }) {
   return (
     <span
-      title="Placeholder metric or fact to be verified by Hemangini Nursing College before launch"
+      title="Placeholder metric or fact to be verified by Yuvaan College of Nursing before launch"
       className={cn(
         'inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-amber-900',
         className

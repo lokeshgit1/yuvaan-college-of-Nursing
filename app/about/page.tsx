@@ -10,7 +10,7 @@ import { FadeInView } from '@/components/ui/MotionPrimitives';
 export const metadata = createPageMetadata({
   title: 'About Us | Heritage, Vision & Approvals',
   description:
-    'Learn about Hemangini Nursing College—our educational mission, leadership messages, clinical training values, and statutory recognition details.',
+    'Learn about Yuvaan College of Nursing—our educational mission, leadership messages, clinical training values, and statutory recognition details.',
   path: '/about/',
 });
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
       <PageBanner
         eyebrow="About the Institution"
         title="Educating Competent, Compassionate Nurses"
-        description={`Founded under ${site.about.trustName} (Est. ${site.about.establishedYear}), Hemangini Nursing College combines disciplined academic science with guided hospital mentorship.`}
+        description={`Founded under ${site.about.trustName} (Est. ${site.about.establishedYear}), Yuvaan College of Nursing combines disciplined academic science with guided hospital mentorship.`}
         breadcrumbs={[{ label: 'About Us' }]}
       />
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-card border border-border shadow-card">
               <img
                 src="/images/campus-building.jpg"
-                alt="Hemangini Nursing College modern academic campus and green courtyard"
+                alt="Yuvaan College of Nursing modern academic campus and green courtyard"
                 width={760}
                 height={480}
                 className="aspect-[16/10] w-full object-cover"
@@ -56,7 +56,7 @@ export default function AboutPage() {
               Clinical Precision Rooted in Human Dignity
             </h2>
             <p className="text-[15px] leading-relaxed text-ink-muted md:text-base">
-              At Hemangini Nursing College, nursing education extends beyond memorising textbooks.
+              At Yuvaan College of Nursing, nursing education extends beyond memorising textbooks.
               Students practise clinical skills inside well-equipped Nursing Foundation and
               simulation laboratories before entering multi-specialty hospital wards alongside
               experienced nurse tutors.
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/courses/"
-                className="inline-flex min-h-[44px] items-center rounded-btn bg-accent-dark px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#a91c61]"
+                className="inline-flex min-h-[44px] items-center rounded-btn bg-accent-dark px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
               >
                 Explore Programmes
               </Link>
@@ -129,8 +129,8 @@ export default function AboutPage() {
               Institutional Leadership Desk
             </h2>
             <p className="mt-2 text-sm text-ink-muted">
-              Verified governance and academic officers of Hemangini Nursing College (Itamati,
-              Nayagarh, Odisha • Est. {site.about.establishedYear}).
+              Verified governance and academic officers of Yuvaan College of Nursing (Mahura,
+              Khordha, Odisha • Est. {site.about.establishedYear}).
             </p>
           </div>
 
@@ -139,13 +139,13 @@ export default function AboutPage() {
             {[
               {
                 name: site.about.chairmanName,
-                role: 'Chairperson',
+                role: 'Chairperson & Authorised Rep.',
                 detail: `Mob: ${site.about.chairmanPhone}`,
                 img: site.about.chairmanImage,
               },
               {
                 name: site.about.secretaryName,
-                role: 'Secretary & Authorised Representative',
+                role: 'Secretary',
                 detail: `Mob: ${site.about.secretaryPhone}`,
                 img: site.about.secretaryImage,
               },
@@ -166,14 +166,25 @@ export default function AboutPage() {
                 key={leader.role}
                 className="flex items-center gap-3.5 rounded-card border border-border bg-white p-4 shadow-soft"
               >
-                <img
-                  src={leader.img}
-                  alt={`${leader.name} — ${leader.role}`}
-                  width={68}
-                  height={68}
-                  loading="lazy"
-                  className="h-16 w-16 shrink-0 rounded-full border-2 border-surface-mint object-cover object-top"
-                />
+                {leader.img ? (
+                  <img
+                    src={leader.img}
+                    alt={`${leader.name} — ${leader.role}`}
+                    width={68}
+                    height={68}
+                    loading="lazy"
+                    className="h-16 w-16 shrink-0 rounded-full border-2 border-surface-mint object-cover object-top"
+                  />
+                ) : (
+                  <span className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-surface-mint bg-navy font-heading text-lg font-bold text-white">
+                    {leader.name
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')
+                      .slice(0, 2)
+                      .toUpperCase()}
+                  </span>
+                )}
                 <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-wide text-accent-dark">
                     {leader.role}
@@ -249,7 +260,7 @@ export default function AboutPage() {
             </div>
             <Link
               href="/legal/disclosure/"
-              className="inline-flex min-h-[44px] items-center gap-2 rounded-btn bg-primary-dark px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#085451]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-btn bg-primary-dark px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#075985]"
             >
               <ShieldCheck className="h-4 w-4" aria-hidden="true" />
               <span>View Full Mandatory Disclosure</span>

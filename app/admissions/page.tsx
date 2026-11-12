@@ -10,7 +10,7 @@ import { EnquiryForm } from '@/components/forms/EnquiryForm';
 export const metadata = createPageMetadata({
   title: 'Admissions 2026–27 | Process, Eligibility, Fees & Forms',
   description:
-    'Complete guide to Hemangini Nursing College admissions: eligibility rules, required documents checklist, important dates, fee schedule, and downloadable application PDFs.',
+    'Complete guide to Yuvaan College of Nursing admissions: eligibility rules, required documents checklist, important dates, fee schedule, and downloadable application PDFs.',
   path: '/admissions/',
 });
 
@@ -37,7 +37,7 @@ export default function AdmissionsPage() {
           <a
             href={site.applicationLinks.admissionFormPdf}
             download
-            className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+            className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
           >
             <Download className="h-4 w-4" aria-hidden="true" />
             <span>Download Admission Form (PDF)</span>
@@ -114,7 +114,7 @@ export default function AdmissionsPage() {
             <div className="flex items-center gap-2">
               <FileText className="h-4 w-4 shrink-0 text-primary-dark" aria-hidden="true" />
               <span>
-                Submit your printed admission form at our Itamati campus admission desk or send an
+                Submit your printed admission form at our Mahura, Khordha campus admission desk or send an
                 online enquiry for counselling support.
               </span>
             </div>

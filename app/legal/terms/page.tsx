@@ -7,7 +7,7 @@ import { JsonLd } from '@/components/ui/JsonLd';
 export const metadata = createPageMetadata({
   title: 'Terms of Use',
   description:
-    'Terms governing informational use of the Hemangini Nursing College website, admission guidelines, and external links.',
+    'Terms governing informational use of the Yuvaan College of Nursing website, admission guidelines, and external links.',
   path: '/legal/terms/',
 });
 

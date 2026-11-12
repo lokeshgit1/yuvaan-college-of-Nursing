@@ -8,7 +8,7 @@ import { NoticesClient } from '@/components/sections/NoticesClient';
 export const metadata = createPageMetadata({
   title: 'Official Notice Board & Circulars',
   description:
-    'Check latest admission circulars, examination timetables, scholarship updates, clinical rosters, and downloadable PDF notices from Hemangini Nursing College.',
+    'Check latest admission circulars, examination timetables, scholarship updates, clinical rosters, and downloadable PDF notices from Yuvaan College of Nursing.',
   path: '/notices/',
 });
 
@@ -27,7 +27,7 @@ export default function NoticesPage() {
       <PageBanner
         eyebrow="Academic & Administrative Desk"
         title="Official Notice Board & Circulars"
-        description="Filter official college circulars by category and download attached PDF notices from Hemangini Nursing College."
+        description="Filter official college circulars by category and download attached PDF notices from Yuvaan College of Nursing."
         breadcrumbs={[{ label: 'Notices' }]}
       />
 

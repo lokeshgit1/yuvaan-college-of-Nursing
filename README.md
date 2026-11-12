@@ -1,6 +1,6 @@
-# Hemangini Nursing College — Static Website (v1)
+# yuvaan-college-of-Nursing
 
-A fast, accessible, SEO-ready static website for **Hemangini Nursing College** (Main Road, Itamati, Nayagarh, Odisha – 752068), built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, configured with `output: 'export'` for zero-backend CDN hosting.
+A fast, accessible, SEO-ready static website for **Yuvaan College of Nursing** (Plot No. 897/949/1650 & 897/1680, Mahura, Tamando, Khordha, Odisha – 752054), built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, configured with `output: 'export'` for zero-backend CDN hosting.
 
 ---
 

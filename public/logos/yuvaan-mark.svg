@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Yuvaan College of Nursing emblem">
+  <rect width="64" height="64" rx="18" fill="#0B1324"/>
+  <path d="M32 13L46 19V31.5C46 40.5 39.8 47.6 32 51C24.2 47.6 18 40.5 18 31.5V19L32 13Z" fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M32 17.5C29.4 20.8 28 23.8 28 26.5C28 29.1 29.8 31 32 31C34.2 31 36 29.1 36 26.5C36 23.8 34.6 20.8 32 17.5Z" fill="#10B981"/>
+  <rect x="29.5" y="34" width="5" height="11" rx="1.5" fill="#FFFFFF"/>
+  <rect x="26.5" y="37" width="11" height="5" rx="1.5" fill="#FFFFFF"/>
+</svg>

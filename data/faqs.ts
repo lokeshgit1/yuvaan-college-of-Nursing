@@ -13,14 +13,14 @@ export const faqsData: FAQItem[] = [
     category: 'Admissions & Eligibility',
     question: 'How do I apply for the 2026–27 academic session?',
     answer:
-      'You can begin by submitting our short online Enquiry Form, downloading the PDF Admission Form from the Admissions page, or visiting the campus admissions desk in Itamati, Nayagarh. Original document verification is completed in person at the college campus.',
+      'You can begin by submitting our short online Enquiry Form, downloading the PDF Admission Form from the Admissions page, or visiting the campus admissions desk at Mahura (Near C.V. Raman College), Tamando, Khordha. Original document verification is completed in person at the college campus.',
   },
   {
     id: 'faq-3',
     category: 'Approvals',
-    question: 'Is Hemangini Nursing College recognised by INC and the State Nursing Council?',
+    question: 'Is Yuvaan College of Nursing recognised by INC and the State Nursing Council?',
     answer:
-      'Promoter trust registration (Jyoti Shyam Welfare, Bhubaneswar), ONMRC NOC application details (Session 2026–27), clinical permission, and SPA building/fire/pollution clearances are published transparently on our Mandatory Public Disclosure page.',
+      'Promoter trust registration (SAR Welfare, Bhubaneswar — Reg. No. 41132306899), ONMRC NOC application details (Session 2026–27), clinical permission, and SPA building/fire/pollution clearances are published transparently on our Mandatory Public Disclosure page.',
   },
   {
     id: 'faq-4',
@@ -55,6 +55,6 @@ export const faqsData: FAQItem[] = [
     category: 'Hostel & Campus',
     question: 'Can parents and students visit the campus and labs before applying?',
     answer:
-      'Absolutely. We encourage families to visit Monday to Saturday between 9:00 AM and 5:00 PM to tour the Nursing Foundation Lab, library, and hostel and speak directly with faculty.',
+      'Absolutely. We encourage families to visit Monday to Saturday between 9:00 AM and 5:00 PM at Mahura (Near C.V. Raman College), Tamando, Khordha to tour the Nursing Foundation Lab, library, and hostel and speak directly with faculty.',
   },
 ];

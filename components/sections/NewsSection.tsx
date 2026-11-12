@@ -8,7 +8,7 @@ import { formatDate } from '@/lib/utils';
 
 export function NewsSection({ articles }: { articles: NewsArticle[] }) {
   return (
-    <section className="bg-white py-14 md:py-24">
+    <section className="bg-surface-cream/60 py-16 md:py-24">
       <div className="mx-auto max-w-container px-4 md:px-6">
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
           <SectionHeader
@@ -20,13 +20,13 @@ export function NewsSection({ articles }: { articles: NewsArticle[] }) {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/notices/"
-              className="inline-flex min-h-[44px] items-center rounded-btn border border-border bg-white px-4 py-2 text-sm font-semibold text-navy transition-colors hover:border-primary hover:text-primary-dark"
+              className="inline-flex min-h-[44px] items-center rounded-btn border border-border bg-white px-5 py-2 text-sm font-semibold text-navy shadow-soft transition-colors hover:border-primary hover:text-primary-dark"
             >
               Official Notice Board
             </Link>
             <Link
               href="/news/"
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-btn bg-surface-mint px-4 py-2 text-sm font-semibold text-primary-dark transition-colors hover:bg-primary-dark hover:text-white"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-btn bg-primary-dark px-5 py-2 text-sm font-semibold text-white shadow-soft transition-colors hover:bg-primary"
             >
               <span>All News</span>
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -39,7 +39,7 @@ export function NewsSection({ articles }: { articles: NewsArticle[] }) {
             const fm = article.frontmatter;
             return (
               <FadeInView key={fm.slug} delay={idx * 0.06}>
-                <article className="border-border/80 group flex h-full flex-col overflow-hidden rounded-card border bg-white shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
+                <article className="group flex h-full flex-col overflow-hidden rounded-card border border-border bg-white shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
                   <Link href={`/news/${fm.slug}/`} className="block overflow-hidden">
                     <div className="aspect-[16/10] w-full overflow-hidden bg-surface-grey">
                       <img
@@ -52,9 +52,9 @@ export function NewsSection({ articles }: { articles: NewsArticle[] }) {
                       />
                     </div>
                   </Link>
-                  <div className="flex flex-1 flex-col p-5">
+                  <div className="flex flex-1 flex-col p-6">
                     <div className="flex flex-wrap items-center gap-3 text-xs text-ink-muted">
-                      <span className="rounded-full bg-surface-blush px-2.5 py-0.5 font-semibold text-accent-dark">
+                      <span className="rounded-full bg-surface-blush px-3 py-0.5 font-semibold text-accent-dark">
                         {fm.category}
                       </span>
                       <span className="inline-flex items-center gap-1">
@@ -67,10 +67,10 @@ export function NewsSection({ articles }: { articles: NewsArticle[] }) {
                       </span>
                     </div>
 
-                    <h3 className="mt-3 line-clamp-2 font-heading text-lg font-semibold leading-snug text-navy md:text-xl">
+                    <h3 className="mt-3 line-clamp-2 font-heading text-lg font-bold leading-snug text-navy md:text-xl">
                       <Link
                         href={`/news/${fm.slug}/`}
-                        className="transition-colors hover:text-primary-dark"
+                        className="transition-colors hover:text-primary"
                       >
                         {fm.title}
                       </Link>
@@ -80,12 +80,12 @@ export function NewsSection({ articles }: { articles: NewsArticle[] }) {
                       {fm.excerpt}
                     </p>
 
-                    <div className="mt-4 pt-2">
+                    <div className="mt-4 border-t border-border/70 pt-3">
                       <Link
                         href={`/news/${fm.slug}/`}
-                        className="decoration-primary/40 inline-flex items-center gap-1 text-sm font-semibold text-primary-dark underline underline-offset-4 hover:text-accent-dark"
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-primary-dark underline decoration-primary/40 underline-offset-4 hover:text-accent-dark"
                       >
-                        <span>Learn More</span>
+                        <span>Read Article</span>
                         <ArrowRight className="h-4 w-4" aria-hidden="true" />
                       </Link>
                     </div>

@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/ui/JsonLd';
 export const metadata = createPageMetadata({
   title: 'Anti-Ragging Policy & Helpline',
   description:
-    'Zero-tolerance anti-ragging policy, national 24x7 helpline 1800-180-5522, and campus nodal officer contacts at Hemangini Nursing College.',
+    'Zero-tolerance anti-ragging policy, national 24x7 helpline 1800-180-5522, and campus nodal officer contacts at Yuvaan College of Nursing.',
   path: '/legal/anti-ragging/',
 });
 
@@ -27,7 +27,7 @@ export default function AntiRaggingPage() {
       <PageBanner
         eyebrow="Campus Safety & Student Welfare"
         title="Zero-Tolerance Anti-Ragging Notice"
-        description="Hemangini Nursing College maintains a strict ragging-free academic and hostel environment in accordance with UGC and INC regulations."
+        description="Yuvaan College of Nursing maintains a strict ragging-free academic and hostel environment in accordance with UGC and INC regulations."
         breadcrumbs={[{ label: 'Anti-Ragging Policy' }]}
       />
 

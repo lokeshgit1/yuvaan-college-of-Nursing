@@ -6,18 +6,18 @@ import { FadeInView } from '@/components/ui/MotionPrimitives';
 
 export function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) {
   return (
-    <section className="bg-surface-cream py-14 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-container px-4 md:px-6">
         <SectionHeader
           eyebrow="Student & Parent Voices"
           title="Trusted by Aspiring Nurses & Their Families"
-          description="Hear how structured clinical training, faculty mentorship, and campus safety shape student confidence at Hemangini Nursing College."
+          description="Hear how structured clinical training, faculty mentorship, and campus safety shape student confidence at Yuvaan College of Nursing."
         />
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((item, idx) => (
             <FadeInView key={item.id} delay={idx * 0.06}>
-              <article className="border-border/80 flex h-full flex-col justify-between rounded-card border bg-white p-6 shadow-card">
+              <article className="flex h-full flex-col justify-between rounded-card border border-t-4 border-border border-t-primary bg-surface-mint/30 p-6 shadow-card transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:shadow-card-hover">
                 <div>
                   <div className="flex items-center justify-between gap-2">
                     <div
@@ -32,7 +32,7 @@ export function TestimonialsSection({ testimonials }: { testimonials: Testimonia
                         />
                       ))}
                     </div>
-                    <Quote className="text-primary/25 h-6 w-6" aria-hidden="true" />
+                    <Quote className="h-6 w-6 text-primary/30" aria-hidden="true" />
                   </div>
 
                   <blockquote className="mt-4 text-[15px] italic leading-relaxed text-ink">
@@ -40,13 +40,13 @@ export function TestimonialsSection({ testimonials }: { testimonials: Testimonia
                   </blockquote>
                 </div>
 
-                <div className="border-border/70 mt-6 flex items-center justify-between gap-3 border-t pt-4">
+                <div className="mt-6 flex items-center justify-between gap-3 border-t border-border/80 pt-4">
                   <div className="flex items-center gap-3">
-                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-surface-mint font-heading text-sm font-bold text-primary-dark">
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-dark font-heading text-sm font-bold text-white">
                       {item.initials}
                     </span>
                     <div>
-                      <p className="font-heading text-sm font-semibold text-navy">{item.name}</p>
+                      <p className="font-heading text-sm font-bold text-navy">{item.name}</p>
                       <p className="text-xs text-ink-muted">
                         {item.role} • {item.course}
                       </p>

@@ -100,31 +100,31 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
       ) : null}
 
       {/* Hero Banner with Key Facts Bar */}
-      <section className="bg-hero-gradient border-b border-border py-10 md:py-14">
+      <section className="bg-hero-gradient relative overflow-hidden border-b border-white/10 py-12 text-white md:py-16">
         <div className="mx-auto max-w-container px-4 md:px-6">
           <Breadcrumb
-            items={[{ label: 'Courses', href: '/courses/' }, { label: course.shortTitle }]}
+            dark items={[{ label: 'Courses', href: '/courses/' }, { label: course.shortTitle }]}
           />
 
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-surface-mint px-3.5 py-1 text-xs font-semibold uppercase tracking-wide text-primary-dark">
+                <span className="rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wide text-amber-300 backdrop-blur-sm">
                   {course.level} Programme
                 </span>
               </div>
 
-              <h1 className="mt-3 font-heading text-3xl font-bold text-navy md:text-[44px] md:leading-tight">
+              <h1 className="mt-3 font-heading text-3xl font-bold text-white md:text-[44px] md:leading-tight">
                 {course.title}
               </h1>
-              <p className="mt-4 text-base leading-relaxed text-ink-muted md:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
                 {course.shortDescription}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/admissions/"
-                  className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+                  className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
                 >
                   <span>Apply for Admission</span>
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -350,7 +350,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
               <div className="space-y-3 pt-1">
                 <Link
                   href="/contact/"
-                  className="flex min-h-[46px] w-full items-center justify-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+                  className="flex min-h-[46px] w-full items-center justify-center gap-2 rounded-btn bg-accent-dark px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
                 >
                   <span>Enquire About This Course</span>
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

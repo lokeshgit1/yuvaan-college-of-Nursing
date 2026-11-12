@@ -1,7 +1,7 @@
 import { Course } from '@/lib/types';
 
 /**
- * Programmes offered by Hemangini Nursing College:
+ * Programmes offered by Yuvaan College of Nursing:
  * GNM (General Nursing & Midwifery) and ANM (Auxiliary Nurse Midwifery).
  * Note: DMET Odisha New NOC application (2026–27) lists ANM with 60 seats.
  */
@@ -139,7 +139,7 @@ export const coursesData: Course[] = [
       },
     ],
     clinicalTraining:
-      'Guided practical postings with clinical permission across affiliated hospital maternity wards, immunisation clinics, Primary Health Centres (PHCs), and community outreach camps in Nayagarh district.',
+      'Guided practical postings with clinical permission across affiliated hospital maternity wards, immunisation clinics, Primary Health Centres (PHCs), and community outreach camps in Khordha district.',
     careerOptions: [
       'ANM / Multipurpose Female Health Worker (NHM & State Health Dept.)',
       'Maternity Clinic & Mother-Child Care Assistant',

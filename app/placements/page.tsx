@@ -11,7 +11,7 @@ import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 export const metadata = createPageMetadata({
   title: 'Placements, Clinical Rotations & Alumni Careers',
   description:
-    'Learn how Hemangini Nursing College prepares graduates for staff nurse, critical care, NORCET/government nursing officer, and international healthcare roles.',
+    'Learn how Yuvaan College of Nursing prepares graduates for staff nurse, critical care, NORCET/government nursing officer, and international healthcare roles.',
   path: '/placements/',
 });
 
@@ -72,7 +72,7 @@ export default function PlacementsPage() {
               Career Pathways
             </p>
             <h2 className="mt-2 font-heading text-3xl font-semibold text-navy">
-              Where Hemangini Nursing Graduates Serve
+              Where Yuvaan Nursing Graduates Serve
             </h2>
           </div>
 
@@ -113,7 +113,7 @@ export default function PlacementsPage() {
           <div className="mt-10 text-center">
             <Link
               href="/admissions/"
-              className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white hover:bg-[#a91c61]"
+              className="inline-flex min-h-[46px] items-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#065f46]"
             >
               <span>Explore Admissions {new Date().getFullYear()}</span>
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

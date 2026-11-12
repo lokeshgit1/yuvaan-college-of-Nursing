@@ -5,9 +5,9 @@ export const galleryData: GalleryItem[] = [
     id: 'gal-1',
     title: 'Academic Block & Campus Lawn',
     category: 'Campus',
-    caption: 'Sunlit entrance to the Hemangini Nursing College academic building and lecture wing.',
+    caption: 'Sunlit entrance to the Yuvaan College of Nursing academic building and lecture wing.',
     image: '/images/campus-building.jpg',
-    alt: 'Exterior view of the modern Hemangini Nursing College academic building and green lawn',
+    alt: 'Exterior view of the modern Yuvaan College of Nursing academic building and green lawn',
   },
   {
     id: 'gal-2',

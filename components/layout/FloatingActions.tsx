@@ -24,7 +24,7 @@ export function FloatingActions({ phone, whatsappNumber, whatsappPrefill }: Floa
         href={waUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp with Hemangini Nursing College Admissions"
+        aria-label="Chat on WhatsApp with Yuvaan College of Nursing Admissions"
         onClick={() => trackEvent('whatsapp_click', { location: 'floating_button' })}
         className="focus-visible:ring-primary/40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#128C7E] text-white shadow-card-hover transition-transform duration-200 hover:scale-105 focus-visible:ring-4"
       >
@@ -32,7 +32,7 @@ export function FloatingActions({ phone, whatsappNumber, whatsappPrefill }: Floa
       </a>
       <a
         href={telUrl}
-        aria-label="Call Hemangini Nursing College Admissions"
+        aria-label="Call Yuvaan College of Nursing Admissions"
         onClick={() => trackEvent('call_click', { location: 'floating_button' })}
         className="focus-visible:ring-primary/40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary-dark text-white shadow-card-hover transition-transform duration-200 hover:scale-105 focus-visible:ring-4"
       >

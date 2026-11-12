@@ -10,7 +10,7 @@ import { NewsListClient } from '@/components/sections/NewsListClient';
 export const metadata = createPageMetadata({
   title: 'News, Events & Workshops',
   description:
-    'Read campus announcements, Lamp Lighting ceremony updates, community health outreach stories, and admission dates from Hemangini Nursing College.',
+    'Read campus announcements, Lamp Lighting ceremony updates, community health outreach stories, and admission dates from Yuvaan College of Nursing.',
   path: '/news/',
 });
 

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ShieldCheck } from 'lucide-react';
 
-const STORAGE_KEY = 'hemangini_cookie_consent_v1';
+const STORAGE_KEY = 'yuvaan_cookie_consent_v1';
 
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -50,7 +50,7 @@ export function CookieConsent() {
             <button
               type="button"
               onClick={() => handleChoice('accepted')}
-              className="min-h-[36px] rounded-btn bg-primary-dark px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-[#085451]"
+              className="min-h-[36px] rounded-btn bg-primary-dark px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-[#075985]"
             >
               Accept
             </button>

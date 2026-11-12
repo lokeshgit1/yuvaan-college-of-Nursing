@@ -118,8 +118,8 @@ export function EnquiryForm({
         },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `Admission Enquiry (${values.course}) — Hemangini Nursing College`,
-          from_name: 'Hemangini Nursing College Website',
+          subject: `Admission Enquiry (${values.course}) — Yuvaan College of Nursing`,
+          from_name: 'Yuvaan College of Nursing Website',
           name: values.name,
           phone: values.phone,
           email: values.email,
@@ -386,7 +386,7 @@ export function EnquiryForm({
             className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-primary focus:ring-primary"
           />
           <span>
-            I authorise Hemangini Nursing College to contact me via phone, WhatsApp, or email
+            I authorise Yuvaan College of Nursing to contact me via phone, WhatsApp, or email
             regarding admission counselling in accordance with the{' '}
             <Link href="/legal/privacy/" className="font-semibold text-primary-dark underline">
               Privacy Policy
@@ -405,7 +405,7 @@ export function EnquiryForm({
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-[15px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#a91c61] disabled:cursor-not-allowed disabled:opacity-65"
+        className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-btn bg-accent-dark px-6 py-3 text-[15px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#065f46] disabled:cursor-not-allowed disabled:opacity-65"
       >
         {status === 'submitting' ? (
           <>

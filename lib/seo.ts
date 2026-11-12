@@ -57,7 +57,7 @@ export function buildCollegeJsonLd() {
     '@type': ['CollegeOrUniversity', 'LocalBusiness'],
     name: siteConfig.name,
     url: siteUrl,
-    logo: `${siteUrl}/logos/hemangini-logo.png`,
+    logo: `${siteUrl}/logos/yuvaan-mark.svg`,
     image: `${siteUrl}/images/campus-building.jpg`,
     description: siteConfig.description,
     telephone: siteConfig.phone.replace(/\s*\[CONFIRM\]/g, ''),

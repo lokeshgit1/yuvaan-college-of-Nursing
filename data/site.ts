@@ -3,25 +3,25 @@ import { SiteConfig } from '@/lib/types';
 /**
  * Centralised editable college configuration.
  * All institutional, trust, infrastructure, safety clearance, contact,
- * course, and leadership details confirmed by Hemangini Nursing College.
+ * course, and leadership details confirmed for Yuvaan College of Nursing.
  */
 export const siteConfig: SiteConfig = {
-  name: 'Hemangini Nursing College',
-  shortName: 'Hemangini Nursing',
+  name: 'Yuvaan College of Nursing',
+  shortName: 'Yuvaan Nursing',
   tagline: 'Compassionate care shaped by clinical skill, ethics, and academic discipline.',
   description:
-    'Hemangini Nursing College (Main Road, Itamati, Nayagarh, Odisha — Est. 2025) under Jyoti Shyam Welfare Trust offers GNM and ANM nursing education with modern simulation labs and clinical training.',
-  city: 'Itamati, Nayagarh',
+    'Yuvaan College of Nursing (Near C.V. Raman College, Mahura, Tamando, Khordha, Odisha — Est. 2025) under SAR Welfare Trust offers GNM and ANM nursing education with modern simulation labs and clinical training.',
+  city: 'Mahura, Khordha',
   state: 'Odisha',
-  address: 'Main Road, At/Post/Via: Itamati, Dist: Nayagarh, Odisha – 752068',
-  phone: '+91 94394 96540',
-  alternatePhone: '+91 94370 92666',
-  admissionsPhone: '+91 94394 96540',
-  whatsappNumber: '919439496540',
+  address: 'Near C.V. Raman College, At: Mahura, Post: Tamando, Via/Dist: Khordha, Odisha – 752054',
+  phone: '+91 97764 23909',
+  alternatePhone: '+91 96682 35580',
+  admissionsPhone: '+91 97764 23909',
+  whatsappNumber: '919776423909',
   whatsappPrefill:
-    'Hello Hemangini Nursing College Admissions Desk (Itamati, Nayagarh), I would like information regarding GNM / ANM admissions.',
-  email: 'jyotishyamwelfare@gmail.com',
-  admissionsEmail: 'jyotishyamwelfare@gmail.com',
+    'Hello Yuvaan College of Nursing Admissions Desk (Mahura, Khordha), I would like information regarding GNM / ANM admissions.',
+  email: 'sarwelfare.bbsr@gmail.com',
+  admissionsEmail: 'sarwelfare.bbsr@gmail.com',
   officeHours: 'Monday – Saturday, 9:00 AM to 5:00 PM',
   admissionYear: '2026–27',
   applicationLinks: {
@@ -30,8 +30,9 @@ export const siteConfig: SiteConfig = {
     admissionFormPdf: '/downloads/admission-form.pdf',
     feeStructurePdf: '/downloads/fee-structure.pdf',
   },
-  mapEmbedUrl: 'https://www.google.com/maps?q=Itamati,Nayagarh,Odisha,752068&output=embed',
-  mapDirectionsUrl: 'https://maps.google.com/?q=Itamati,Nayagarh,Odisha,752068',
+  mapEmbedUrl:
+    'https://www.google.com/maps?q=Mahura,Tamando,Khordha,Odisha,752054&output=embed',
+  mapDirectionsUrl: 'https://maps.google.com/?q=Mahura,Tamando,Khordha,Odisha,752054',
   socials: {
     facebook: 'https://facebook.com',
     instagram: 'https://instagram.com',
@@ -39,10 +40,10 @@ export const siteConfig: SiteConfig = {
     linkedin: 'https://linkedin.com',
   },
   hero: {
-    eyebrow: 'NURSING EDUCATION IN ITAMATI, NAYAGARH, ODISHA',
+    eyebrow: 'NURSING EDUCATION IN MAHURA, KHORDHA, ODISHA',
     headline: 'Care. Learn. Lead.',
     subheadline:
-      'Begin your nursing career in Nayagarh with structured GNM & ANM training, dedicated B.Sc. Nursing lecturers, a 32,496 sq. ft. campus, and clinical permission for practical postings.',
+      'Begin your nursing career in Khordha with structured GNM & ANM training, dedicated B.Sc. Nursing lecturers, a 35,000 sq. ft. campus near C.V. Raman College, and clinical permission for practical postings.',
     primaryCta: 'Explore Courses',
     secondaryCta: 'Book Campus Visit',
     image: '/images/hero-student.jpg',
@@ -50,8 +51,8 @@ export const siteConfig: SiteConfig = {
       'Smiling nursing student in teal and white uniform carrying a clinical clipboard inside a sunlit nursing college corridor',
     floatingBadges: {
       topValue: 'Est. 2025',
-      topLabel: 'Itamati, Nayagarh',
-      bottomValue: '32,496 sq.ft',
+      topLabel: 'Mahura, Khordha',
+      bottomValue: '35,000 sq.ft',
       bottomLabel: 'SPA & Safety Cleared',
     },
   },
@@ -74,7 +75,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: 'campus',
-      value: 32496,
+      value: 35000,
       suffix: '',
       label: 'Total Campus Area (Sq. Ft.)',
       iconName: 'hospital',
@@ -116,9 +117,9 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: 'trust',
-      title: 'Jyoti Shyam Welfare (Trust)',
+      title: 'SAR Welfare (Trust)',
       authority: 'Registered under Trust Act, Bhubaneswar',
-      regNumber: 'Reg. No. 41132401995 (Est. 2012)',
+      regNumber: 'Reg. No. 41132306899 (Est. 2019)',
       status: 'Registered Promoter Trust',
       confirm: false,
     },
@@ -128,7 +129,7 @@ export const siteConfig: SiteConfig = {
       id: 'faculty',
       title: 'Dedicated Nursing Leadership & Faculty',
       description:
-        'Led by Principal Salla Bhavani, Vice-Principal Sidheswar Satapathy, and 6 B.Sc. Nursing lecturers.',
+        'Led by Principal Subhalaxmi Behera, Vice-Principal Debasis Sahu, and 6 B.Sc. Nursing lecturers.',
       iconName: 'graduation',
       tint: 'teal',
     },
@@ -142,9 +143,9 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: 'campus',
-      title: '30,542 Sq. Ft. Built-Up Academic Block',
+      title: '31,559 Sq. Ft. Built-Up Academic Block',
       description:
-        'SPA-approved building on Main Road, Itamati with Architect Completion, Fire, and Pollution clearances.',
+        'SPA-approved building at Mahura (Near C.V. Raman College) with Architect Completion, Fire, and Pollution clearances.',
       iconName: 'home',
       tint: 'sun',
     },
@@ -178,7 +179,7 @@ export const siteConfig: SiteConfig = {
       step: 'Step 01',
       title: 'Enquire & Counsel',
       description:
-        'Submit the short enquiry form or call +91 94394 96540 to discuss GNM & ANM eligibility and campus facilities.',
+        'Submit the short enquiry form or call +91 97764 23909 to discuss GNM & ANM eligibility and campus facilities.',
       iconName: 'messageSquare',
       bgClass: 'bg-surface-sun',
     },
@@ -194,7 +195,7 @@ export const siteConfig: SiteConfig = {
       step: 'Step 03',
       title: 'Verification & Fee Payment',
       description:
-        'Complete merit/counselling verification at our Itamati campus, review the fee schedule, and confirm your seat.',
+        'Complete merit/counselling verification at our Mahura, Khordha campus, review the fee schedule, and confirm your seat.',
       iconName: 'creditCard',
       bgClass: 'bg-surface-blush',
     },
@@ -244,44 +245,40 @@ export const siteConfig: SiteConfig = {
   ],
   about: {
     establishedYear: '2025',
-    trustName: 'Jyoti Shyam Welfare (Registered under Trust Act)',
+    trustName: 'SAR Welfare (Registered under Trust Act)',
     vision:
-      'To nurture ethically grounded, clinically skilled nursing professionals who deliver compassionate, evidence-based patient care across Nayagarh, Odisha, and beyond.',
+      'To nurture ethically grounded, clinically skilled nursing professionals who deliver compassionate, evidence-based patient care across Khordha, Odisha, and beyond.',
     mission: [
       'Deliver competency-driven GNM and ANM nursing education combining classroom foundations with supervised bedside training.',
       'Cultivate empathy, patient safety, teamwork, and lifelong learning among every student nurse.',
       'Partner with multi-specialty and community hospitals to bridge academic theory and real-world healthcare delivery.',
       'Maintain transparent governance, safe facilities with Fire & Pollution clearances, and inclusive opportunities for aspiring students.',
     ],
-    principalName: 'Salla Bhavani',
+    principalName: 'Subhalaxmi Behera',
     principalQualification: 'B.Sc. Nursing',
-    principalImage: '/images/leader-principal.jpg',
     principalMessage:
-      'Nursing is both a science of precision and an art of human compassion. At Hemangini Nursing College, every student is mentored individually—from their first procedure in our Nursing Foundation Lab to supervised ward rotations—so they step into clinical care with confidence and integrity.',
-    vicePrincipalName: 'Sidheswar Satapathy',
+      'Nursing is both a science of precision and an art of human compassion. At Yuvaan College of Nursing, every student is mentored individually—from their first procedure in our Nursing Foundation Lab to supervised ward rotations—so they step into clinical care with confidence and integrity.',
+    vicePrincipalName: 'Debasis Sahu',
     vicePrincipalQualification: 'B.Sc. Nursing',
-    vicePrincipalImage: '/images/leader-vice-principal.jpg',
-    chairmanName: 'Sunjeet Roshan Pattanaik',
-    chairmanPhone: '+91 99370 65019',
-    chairmanImage: '/images/leader-chairperson.jpg',
+    chairmanName: 'Debaraj Majhi',
+    chairmanPhone: '+91 96682 35580',
     chairmanMessage:
-      'Under Jyoti Shyam Welfare, we established Hemangini Nursing College in Itamati, Nayagarh in 2025 with a clear purpose: families in our region deserve accessible, transparent, high-integrity nursing education backed by dedicated faculty and compliant campus infrastructure.',
-    secretaryName: 'Sishira Kumar Pattanaik',
-    secretaryPhone: '+91 94394 96540',
-    secretaryImage: '/images/leader-secretary.jpg',
-    authorisedRepresentative: 'Sishira Kumar Pattanaik',
-    contactPersonName: 'Sishira Kumar Pattanaik',
+      'Under SAR Welfare, we established Yuvaan College of Nursing at Mahura, Khordha in 2025 with a clear purpose: families in our region deserve accessible, transparent, high-integrity nursing education backed by dedicated faculty and compliant campus infrastructure.',
+    secretaryName: 'Ranjan Mahanta',
+    secretaryPhone: '+91 97764 23909',
+    authorisedRepresentative: 'Debaraj Majhi',
+    contactPersonName: 'Gopal Krushna Panda',
   },
   disclosure: {
-    trustRegistrationNo: '41132401995',
-    trustRegisteredYear: '2012',
+    trustRegistrationNo: '41132306899',
+    trustRegisteredYear: '2019',
     trustRegisteredAt: 'Bhubaneswar',
     universityAffiliation:
       'Odisha Nurses & Midwives Registration Council (ONMRC) — Session 2026–27 NOC Application',
     incCode: 'Indian Nursing Council (INC) Norms Compliant • Details at College Office',
     stateCouncilCode: 'ONMRC Affiliation & Inspection Record (Session 2026–27)',
-    landArea: '32,496 Sq. Ft. (Main Road, Itamati, Nayagarh)',
-    builtUpArea: '30,542 Sq. Ft.',
+    landArea: '35,000 Sq. Ft. (Near C.V. Raman College, Mahura, Tamando, Khordha)',
+    builtUpArea: '31,559 Sq. Ft.',
     buildingApproval:
       'Approved by SPA (Special Planning Authority) • Registered Architect Completion Certificate',
     clearances: [
@@ -295,9 +292,9 @@ export const siteConfig: SiteConfig = {
     parentHospitalBeds:
       'Clinical Permission Obtained • Affiliated Hospital Consent Letter on Record',
     staffSummary:
-      'Principal (1), Vice-Principal (1), Lecturers (6 — B.Sc. Nursing), Lab Assistants (2 — B.Sc.), Administrative & Campus Support Staff (4)',
+      'Principal (1), Vice-Principal (1), Lecturers (6 — B.Sc. Nursing), Lab Assistants (2 — B.Sc.), Administrative & Support Staff (3 — Accountant, Clerk, Store Keeper)',
     antiRaggingHelpline: '1800-180-5522 (National Anti-Ragging Helpline)',
-    nodalOfficerPhone: '+91 94394 96540',
-    nodalOfficerEmail: 'jyotishyamwelfare@gmail.com',
+    nodalOfficerPhone: '+91 97764 23909',
+    nodalOfficerEmail: 'sarwelfare.bbsr@gmail.com',
   },
 };

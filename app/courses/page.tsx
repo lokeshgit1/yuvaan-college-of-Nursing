@@ -8,7 +8,7 @@ import { CoursesCatalogClient } from '@/components/sections/CoursesCatalogClient
 export const metadata = createPageMetadata({
   title: 'Nursing Courses | GNM & ANM Programmes',
   description:
-    'Explore General Nursing & Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM) at Hemangini Nursing College, Itamati, Nayagarh with eligibility, seats, syllabus, and clinical training.',
+    'Explore General Nursing & Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM) at Yuvaan College of Nursing, Mahura, Khordha with eligibility, seats, syllabus, and clinical training.',
   path: '/courses/',
 });
 
@@ -27,7 +27,7 @@ export default function CoursesPage() {
       <PageBanner
         eyebrow="Academic Programmes"
         title="GNM & ANM Nursing Courses"
-        description="Hemangini Nursing College offers two dedicated nursing diploma programmes—GNM (General Nursing & Midwifery) and ANM (Auxiliary Nurse Midwifery)."
+        description="Yuvaan College of Nursing offers two dedicated nursing diploma programmes—GNM (General Nursing & Midwifery) and ANM (Auxiliary Nurse Midwifery)."
         breadcrumbs={[{ label: 'Courses' }]}
       />
 

@@ -8,7 +8,7 @@ import { FacultyCatalogClient } from '@/components/sections/FacultyCatalogClient
 export const metadata = createPageMetadata({
   title: 'Faculty & Academic Leadership',
   description:
-    'Meet the Principal, Vice-Principal, and nursing tutors mentoring GNM and ANM students at Hemangini Nursing College, Itamati, Nayagarh.',
+    'Meet the Principal, Vice-Principal, and nursing tutors mentoring GNM and ANM students at Yuvaan College of Nursing, Mahura, Khordha.',
   path: '/faculty/',
 });
 
@@ -27,7 +27,7 @@ export default function FacultyPage() {
       <PageBanner
         eyebrow="Academic Mentors"
         title="Dedicated Nursing Faculty & Lab Support"
-        description="Led by Principal Salla Bhavani and Vice-Principal Sidheswar Satapathy alongside six B.Sc. Nursing Lecturers and two B.Sc. Lab Assistants supporting GNM and ANM learners."
+        description="Led by Principal Subhalaxmi Behera and Vice-Principal Debasis Sahu alongside six B.Sc. Nursing Lecturers and two B.Sc. Lab Assistants supporting GNM and ANM learners."
         breadcrumbs={[{ label: 'Faculty' }]}
       />
 

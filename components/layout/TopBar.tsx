@@ -28,22 +28,22 @@ export function TopBar({ phone, email, admissionYear, notices }: TopBarProps) {
   const cleanEmail = email.replace(/\s*\[CONFIRM\]/g, '').trim();
 
   return (
-    <div className="bg-navy text-[13px] text-white/90">
+    <div className="border-b border-slate-800 bg-[#070B19] text-[13px] text-slate-300">
       <div className="mx-auto flex max-w-container flex-wrap items-center justify-between gap-2 px-4 py-2 md:px-6">
         <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
           <a
             href={buildTelHref(phone)}
             onClick={() => trackEvent('call_click', { location: 'topbar' })}
-            className="inline-flex items-center gap-1.5 text-white/90 transition-colors hover:text-white"
+            className="inline-flex items-center gap-1.5 text-slate-300 transition-colors hover:text-white"
           >
-            <Phone className="h-3.5 w-3.5 text-[#F6A5BE]" aria-hidden="true" />
+            <Phone className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
             <span>{phone}</span>
           </a>
           <a
             href={`mailto:${cleanEmail}`}
-            className="hidden items-center gap-1.5 text-white/90 transition-colors hover:text-white sm:inline-flex"
+            className="hidden items-center gap-1.5 text-slate-300 transition-colors hover:text-white sm:inline-flex"
           >
-            <Mail className="h-3.5 w-3.5 text-[#8FD3DE]" aria-hidden="true" />
+            <Mail className="h-3.5 w-3.5 text-sky-400" aria-hidden="true" />
             <span>{cleanEmail}</span>
           </a>
         </div>
@@ -52,16 +52,16 @@ export function TopBar({ phone, email, admissionYear, notices }: TopBarProps) {
           {currentNotice ? (
             <Link
               href="/notices/"
-              className="hidden max-w-[340px] items-center gap-1.5 truncate text-xs text-white/85 transition-colors hover:text-white lg:inline-flex"
+              className="hidden max-w-[340px] items-center gap-1.5 truncate text-xs text-slate-300 transition-colors hover:text-white lg:inline-flex"
               title={currentNotice.title}
             >
-              <Bell className="h-3.5 w-3.5 shrink-0 text-amber-300" aria-hidden="true" />
+              <Bell className="h-3.5 w-3.5 shrink-0 text-emerald-400" aria-hidden="true" />
               <span className="truncate">{currentNotice.title}</span>
             </Link>
           ) : null}
           <Link
             href="/admissions/"
-            className="inline-flex items-center rounded-full bg-accent-dark px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-[#a91c61]"
+            className="inline-flex items-center rounded-full bg-accent-dark px-3.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-[#065f46]"
           >
             Admissions Open {admissionYear}
           </Link>

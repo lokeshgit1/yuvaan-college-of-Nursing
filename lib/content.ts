@@ -119,7 +119,7 @@ export function getNewsArticles(limit?: number): NewsArticle[] {
       readTime: String(data.readTime || '3 min read'),
       excerpt: String(data.excerpt || ''),
       coverImage: String(data.coverImage || '/images/campus-building.jpg'),
-      coverAlt: String(data.coverAlt || String(data.title || 'Hemangini Nursing College')),
+      coverAlt: String(data.coverAlt || String(data.title || 'Yuvaan College of Nursing')),
       author: String(data.author || 'Editorial Desk'),
       featured: Boolean(data.featured),
     };

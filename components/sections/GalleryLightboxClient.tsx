@@ -112,7 +112,7 @@ export function GalleryLightboxClient({ items }: { items: GalleryItem[] }) {
                 Campus Walkthrough &amp; Lamp Lighting Highlights
               </h2>
               <p className="mt-1 text-sm text-ink-muted">
-                Families and prospective students are invited to tour our 32,496 sq. ft. Itamati
+                Families and prospective students are invited to tour our 35,000 sq. ft. Mahura, Khordha
                 academic campus, Nursing Foundation Lab, and Central Library in person Monday to
                 Saturday.
               </p>
@@ -120,7 +120,7 @@ export function GalleryLightboxClient({ items }: { items: GalleryItem[] }) {
           </div>
           <a
             href="/contact/"
-            className="inline-flex min-h-[42px] shrink-0 items-center rounded-btn bg-primary-dark px-5 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#085451]"
+            className="inline-flex min-h-[42px] shrink-0 items-center rounded-btn bg-primary-dark px-5 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#075985]"
           >
             Book Campus Visit
           </a>

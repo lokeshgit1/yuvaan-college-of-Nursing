@@ -20,56 +20,20 @@ const tintMap = {
   sun: 'bg-surface-sun text-amber-900',
   blue: 'bg-sky-50 text-sky-800',
   mint: 'bg-emerald-50 text-emerald-800',
-  cream: 'bg-surface-cream text-navy',
+  cream: 'bg-orange-50 text-orange-900',
 };
 
 export function WhyChooseSection({ items }: { items: SiteConfig['whyChoose'] }) {
   return (
-    <section className="bg-surface-cream/60 py-14 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <div className="mx-auto grid max-w-container grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-12">
-        {/* Left: Overlapping rounded photos collage */}
-        <FadeInView className="lg:col-span-5">
-          <div className="relative mx-auto max-w-md pb-12 pr-6 sm:pb-16 sm:pr-10">
-            <div
-              aria-hidden="true"
-              className="hero-dots-pattern absolute -left-4 -top-4 h-36 w-36 rounded-2xl opacity-70"
-            />
-            <div className="relative overflow-hidden rounded-card border-4 border-white shadow-card-hover">
-              <img
-                src="/images/clinical-training.jpg"
-                alt="Student nurses in uniform reviewing patient care charts in a hospital ward"
-                width={640}
-                height={480}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-
-            <div className="relative -mt-14 ml-auto w-3/4 overflow-hidden rounded-card border-4 border-white shadow-card-hover sm:-mt-20">
-              <img
-                src="/images/skills-lab.jpg"
-                alt="Nursing faculty guiding students in the Nursing Foundation simulation lab"
-                width={520}
-                height={360}
-                loading="lazy"
-                className="aspect-[16/10] w-full object-cover"
-              />
-            </div>
-
-            <div className="absolute bottom-2 left-2 rounded-card border border-border bg-white px-4 py-3 shadow-card">
-              <p className="font-heading text-xl font-bold text-primary-dark">Est. 2025</p>
-              <p className="text-xs font-medium text-ink-muted">Itamati, Nayagarh • Odisha</p>
-            </div>
-          </div>
-        </FadeInView>
-
-        {/* Right: 6 Why-Choose Points */}
+        {/* Left: 6 Why-Choose Points */}
         <div className="lg:col-span-7">
           <SectionHeader
             align="left"
-            eyebrow="Why Choose Hemangini"
+            eyebrow="Why Choose Yuvaan"
             title="Supportive Mentorship Meets Real Hospital Training"
-            description="Every detail of campus life—from simulation labs to hostel safety—is structured to help students grow into calm, capable nurses."
+            description="Every detail of campus life—from simulation labs to safety clearances—is structured to help students grow into calm, capable nurses."
           />
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -77,19 +41,17 @@ export function WhyChooseSection({ items }: { items: SiteConfig['whyChoose'] }) 
               const Icon = iconMap[item.iconName];
               return (
                 <FadeInView key={item.id} delay={idx * 0.04}>
-                  <div className="border-border/80 flex items-start gap-3.5 rounded-card border bg-white p-4 shadow-soft">
+                  <div className="group flex h-full items-start gap-3.5 rounded-card border border-border bg-surface-cream/40 p-5 shadow-soft transition-all duration-200 hover:border-primary/35 hover:bg-white hover:shadow-card">
                     <span
                       className={cn(
-                        'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full',
+                        'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl transition-transform group-hover:scale-105',
                         tintMap[item.tint]
                       )}
                     >
                       <Icon className="h-5 w-5" strokeWidth={1.7} aria-hidden="true" />
                     </span>
                     <div>
-                      <h3 className="font-heading text-base font-semibold text-navy">
-                        {item.title}
-                      </h3>
+                      <h3 className="font-heading text-base font-bold text-navy">{item.title}</h3>
                       <p className="mt-1 text-sm leading-relaxed text-ink-muted">
                         {item.description}
                       </p>
@@ -100,6 +62,48 @@ export function WhyChooseSection({ items }: { items: SiteConfig['whyChoose'] }) 
             })}
           </div>
         </div>
+
+        {/* Right: Dark Architectural Feature + Photo Stack */}
+        <FadeInView className="lg:col-span-5">
+          <div className="space-y-4">
+            <div className="overflow-hidden rounded-card border border-border shadow-card-hover">
+              <img
+                src="/images/clinical-training.jpg"
+                alt="Student nurses in uniform reviewing patient care charts in a hospital ward"
+                width={640}
+                height={420}
+                loading="lazy"
+                className="aspect-[16/10] w-full object-cover"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-5">
+              <div className="bg-hero-gradient flex flex-col justify-between rounded-card p-5 text-white shadow-card sm:col-span-2">
+                <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-amber-300">
+                  Campus Standard
+                </p>
+                <div className="mt-4">
+                  <p className="font-heading text-2xl font-bold text-white">35,000</p>
+                  <p className="text-xs text-sky-300">Sq. Ft. Campus • Est. 2025</p>
+                  <p className="mt-2 text-[11px] font-medium text-slate-300">
+                    Mahura, Khordha • Odisha
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-hidden rounded-card border border-border shadow-card sm:col-span-3">
+                <img
+                  src="/images/skills-lab.jpg"
+                  alt="Nursing faculty guiding students in the Nursing Foundation simulation lab"
+                  width={520}
+                  height={340}
+                  loading="lazy"
+                  className="h-full min-h-[170px] w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </FadeInView>
       </div>
     </section>
   );
